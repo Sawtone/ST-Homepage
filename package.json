@@ -19,7 +19,7 @@
     "follow-redirects": "^1.15.11",
     "gamedig": "^5.3.1",
     "i18next": "^24.2.3",
-    "ical.js": "^2.1.0",
+    "ical.js": "^2.2.1",
     "js-yaml": "^4.1.0",
     "json-rpc-2.0": "^1.7.0",
     "luxon": "^3.6.1",
