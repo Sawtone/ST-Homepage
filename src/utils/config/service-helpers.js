@@ -255,6 +255,9 @@ export function cleanServiceGroups(groups) {
           fields,
           hideErrors,
           type,
+          style,
+          compact,
+          headers,
 
           // azuredevops
           repositoryId,
@@ -623,6 +626,10 @@ export function cleanServiceGroups(groups) {
           if (pool3) widget.pool3 = pool3;
           if (pool4) widget.pool4 = pool4;
         }
+        // pass-through for display options used by frontend rendering
+        if (style !== undefined) widget.style = style;
+        if (compact !== undefined) widget.compact = compact;
+        if (headers !== undefined) widget.headers = headers;
         return widget;
       });
       return cleanedService;

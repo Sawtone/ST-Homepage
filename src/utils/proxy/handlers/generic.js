@@ -25,7 +25,20 @@ export default async function genericProxyHandler(req, res, map) {
       }
       const url = new URL(urlString);
 
-      const headers = req.extraHeaders ?? widget.headers ?? widgets[widget.type].headers ?? {};
+      // Merge headers: defaults from widget definition < overrides from config < runtime extra headers
+      const headers = {
+        ...(widgets[widget.type].headers || {}),
+        ...(widget.headers || {}),
+        ...(req.extraHeaders || {}),
+      };
+
+      // Optional: inject PAT from environment for known providers without exposing to client
+      if (widget.type === "gitrepo") {
+        const envToken = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || process.env.GITHUB_PAT;
+        if (envToken && !headers.Authorization) {
+          headers.Authorization = `Bearer ${envToken}`;
+        }
+      }
 
       if (widget.username && widget.password) {
         headers.Authorization = `Basic ${Buffer.from(`${widget.username}:${widget.password}`).toString("base64")}`;

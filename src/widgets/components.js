@@ -136,6 +136,7 @@ const components = {
   traefik: dynamic(() => import("./traefik/component")),
   transmission: dynamic(() => import("./transmission/component")),
   trilium: dynamic(() => import("./trilium/component")),
+  gitrepo: dynamic(() => import("./gitrepo/component")),
   tubearchivist: dynamic(() => import("./tubearchivist/component")),
   truenas: dynamic(() => import("./truenas/component")),
   unifi: dynamic(() => import("./unifi/component")),
