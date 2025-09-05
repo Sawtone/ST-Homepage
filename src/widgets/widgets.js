@@ -142,6 +142,7 @@ import wgeasy from "./wgeasy/widget";
 import whatsupdocker from "./whatsupdocker/widget";
 import xteve from "./xteve/widget";
 import zabbix from "./zabbix/widget";
+import gitrepo from "./gitrepo/widget";
 
 const widgets = {
   adguard,
@@ -268,6 +269,7 @@ const widgets = {
   strelaysrv,
   swagdashboard,
   suwayomi,
+  gitrepo,
   tailscale,
   tandoor,
   tautulli,
@@ -292,6 +294,7 @@ const widgets = {
   whatsupdocker,
   xteve,
   zabbix,
+  gitrepo,
 };
 
 export default widgets;

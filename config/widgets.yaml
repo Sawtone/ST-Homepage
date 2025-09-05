@@ -1,0 +1,34 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/info-widgets/
+
+# - datetime:
+#     text_size: xl
+#     format:
+#     #   dateStyle: short
+#       timeStyle: short
+#       hourCycle: h23
+
+- openmeteo:
+    label: Beijing
+    units: metric
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+    format:
+      maximumFractionDigits: 1
+
+- greeting:
+    text_size: xl
+    text: Sawtone's Workspace
+
+- resources:
+    cpu: true
+
+- search:
+    provider: duckduckgo
+    target: _blank
+
+# - gitrepo:
+#     repo: "gethomepage/homepage"
+#     apiPath: "/api/widgets/gitrepo"
+#     refreshInterval: 60000
+
