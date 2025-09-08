@@ -22,5 +22,3 @@ export default async function handler(req, res) {
   if (contentType) res.setHeader("Content-Type", contentType);
   return res.status(status).send(data);
 }
-
-
