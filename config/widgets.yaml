@@ -31,4 +31,3 @@
 #     repo: "gethomepage/homepage"
 #     apiPath: "/api/widgets/gitrepo"
 #     refreshInterval: 60000
-

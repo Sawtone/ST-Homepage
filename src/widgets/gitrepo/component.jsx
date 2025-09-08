@@ -67,12 +67,8 @@ export default function Component({ service }) {
             <span>🐞 {issues}</span>
             {language && <span>{language}</span>}
           </div>
-          {commitOne && (
-            <div className="text-xs opacity-60 mt-1">{commitOne.split("\n")[0]}</div>
-          )}
-          {commitTwo && (
-            <div className="text-xs opacity-60">{commitTwo.split("\n")[0]}</div>
-          )}
+          {commitOne && <div className="text-xs opacity-60 mt-1">{commitOne.split("\n")[0]}</div>}
+          {commitTwo && <div className="text-xs opacity-60">{commitTwo.split("\n")[0]}</div>}
         </div>
       </Container>
     );
@@ -81,7 +77,14 @@ export default function Component({ service }) {
   console.log("Block");
   return (
     <Container service={service}>
-      <Block label="gitrepo.repo" value={<a href={htmlUrl} target="_blank" rel="noreferrer">{fullName}</a>} />
+      <Block
+        label="gitrepo.repo"
+        value={
+          <a href={htmlUrl} target="_blank" rel="noreferrer">
+            {fullName}
+          </a>
+        }
+      />
       {description && <Block label="gitrepo.description" value={description} />}
       <Block label="gitrepo.stars" value={t("common.number", { value: stars })} />
       <Block label="gitrepo.issues" value={t("common.number", { value: issues })} />
@@ -95,5 +98,3 @@ export default function Component({ service }) {
     </Container>
   );
 }
-
-

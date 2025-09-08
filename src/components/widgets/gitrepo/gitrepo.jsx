@@ -1,7 +1,12 @@
 import useSWR from "swr";
 
 export default function GitRepo({ options }) {
-  const { repo = "gethomepage/homepage", apiPath = "/api/widgets/gitrepo", refreshInterval = 60000, style } = options || {};
+  const {
+    repo = "gethomepage/homepage",
+    apiPath = "/api/widgets/gitrepo",
+    refreshInterval = 60000,
+    style,
+  } = options || {};
 
   const url = `${apiPath}?repo=${encodeURIComponent(repo)}`;
 
@@ -39,9 +44,7 @@ export default function GitRepo({ options }) {
         {language && <span>{language}</span>}
         {license?.spdx_id && <span>{license.spdx_id}</span>}
       </div>
-      {updated_at && (
-        <div className="text-xs opacity-60">更新于 {new Date(updated_at).toLocaleString()}</div>
-      )}
+      {updated_at && <div className="text-xs opacity-60">更新于 {new Date(updated_at).toLocaleString()}</div>}
     </div>
   );
 }

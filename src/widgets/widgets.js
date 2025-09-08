@@ -38,6 +38,7 @@ import gatus from "./gatus/widget";
 import ghostfolio from "./ghostfolio/widget";
 import gitea from "./gitea/widget";
 import gitlab from "./gitlab/widget";
+import gitrepo from "./gitrepo/widget";
 import glances from "./glances/widget";
 import gluetun from "./gluetun/widget";
 import gotify from "./gotify/widget";
@@ -142,7 +143,6 @@ import wgeasy from "./wgeasy/widget";
 import whatsupdocker from "./whatsupdocker/widget";
 import xteve from "./xteve/widget";
 import zabbix from "./zabbix/widget";
-import gitrepo from "./gitrepo/widget";
 
 const widgets = {
   adguard,

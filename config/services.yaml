@@ -36,7 +36,7 @@
           compact: true
           url: https://api.github.com/repos/sawtone/search_helper
           # 可选：刷新间隔（ms）
-          refreshInterval: 60000       
+          refreshInterval: 60000
 
 - LLM2:
     - ChatStudio:
@@ -48,7 +48,7 @@
           compact: true
           url: https://api.github.com/repos/sawtone/ChatStudio
           # 可选：刷新间隔（ms）
-          refreshInterval: 60000   
+          refreshInterval: 60000
 
 - PFollow:
     - TravelTracker:
@@ -60,7 +60,7 @@
           compact: true
           url: https://api.github.com/repos/sawtone/travel-tracker-client
           # 可选：刷新间隔（ms）
-          refreshInterval: 60000        
+          refreshInterval: 60000
 
 - Workspace:
     - ST-Homepage:
