@@ -5,3 +5,11 @@
 providers:
   openweathermap: openweathermapapikey
   weatherapi: weatherapiapikey
+
+connectivity:
+  allowlist:
+    - "localhost"
+    - "127.0.0.1"
+    - "sawtone.site"
+    - "homepage.sawtone.site"
+    - "/.*\\.vercel\\.app/"
