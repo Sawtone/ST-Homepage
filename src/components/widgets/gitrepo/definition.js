@@ -1,4 +1,5 @@
-export default {
+// 不可违反 import/no-anonymous-default-export，需要先赋值变量再导出
+const definition = {
   name: "Git Repository",
   description: "Displays information about a Git repository from GitHub.",
   options: {
@@ -16,3 +17,5 @@ export default {
     },
   },
 };
+
+export default definition;
