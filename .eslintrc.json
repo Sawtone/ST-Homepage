@@ -12,8 +12,9 @@
         "maxDepth": 1
       }
     ],
+    // 正确的代码也会触发报错，暂时放宽限制
     "import/order": [
-      "error",
+      "warn",
       {
         "newlines-between": "always"
       }

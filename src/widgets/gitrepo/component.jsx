@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+
 import Block from "components/services/widget/block";
 import Container from "components/services/widget/container";
 import useWidgetAPI from "utils/proxy/use-widget-api";
