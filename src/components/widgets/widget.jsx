@@ -16,6 +16,7 @@ const widgetMappings = {
   kubernetes: dynamic(() => import("components/widgets/kubernetes/kubernetes")),
   stocks: dynamic(() => import("components/widgets/stocks/stocks")),
   gitrepo: dynamic(() => import("components/widgets/gitrepo/gitrepo")),
+  shortcut: dynamic(() => import("components/widgets/shortcut/shortcut")),
 };
 
 export default function Widget({ widget, style }) {

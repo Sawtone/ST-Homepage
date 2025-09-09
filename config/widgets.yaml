@@ -31,3 +31,18 @@
 #     repo: "gethomepage/homepage"
 #     apiPath: "/api/widgets/gitrepo"
 #     refreshInterval: 60000
+
+# - shortcut:
+#     shape: banner
+#     columns: 6
+#     gap: 6
+#     iconSize: 32
+#     items:
+#       - name: GitHub
+#         href: "https://github.com"
+#         icon: "mdi-github"
+#         description: "代码托管"
+#       - name: Homepage Docs
+#         href: "https://gethomepage.dev"
+#         icon: "sh-homepage.svg"
+#         description: "文档"

@@ -419,6 +419,13 @@ export function cleanServiceGroups(groups) {
 
           // grafana
           alerts,
+
+          // shortcut
+          items,
+          shape,
+          columns,
+          gap,
+          iconSize,
         } = widgetData;
 
         let fieldsList = fields;
@@ -625,6 +632,13 @@ export function cleanServiceGroups(groups) {
           if (pool2) widget.pool2 = pool2;
           if (pool3) widget.pool3 = pool3;
           if (pool4) widget.pool4 = pool4;
+        }
+        if (type === "shortcut") {
+          if (Array.isArray(items)) widget.items = items;
+          if (shape) widget.shape = shape;
+          if (columns !== undefined) widget.columns = parseInt(columns, 10);
+          if (gap !== undefined) widget.gap = parseInt(gap, 10);
+          if (iconSize !== undefined) widget.iconSize = parseInt(iconSize, 10);
         }
         // pass-through for display options used by frontend rendering
         if (style !== undefined) widget.style = style;

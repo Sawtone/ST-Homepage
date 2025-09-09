@@ -2,74 +2,113 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/configs/services/
 
-- Blog:
-    - Sawtone:
-        icon: github
-        href: https://github.com/sawtone/Sawtone.github.io
-        widget:
-          type: gitrepo
-          style: card
-          compact: true
-          url: https://api.github.com/repos/sawtone/Sawtone.github.io
-          # 可选：刷新间隔（ms）
-          refreshInterval: 60000
+# - Blog:
+#     - Sawtone:
+#         icon: github
+#         href: https://github.com/sawtone/Sawtone.github.io
+#         widget:
+#           type: gitrepo
+#           style: card
+#           compact: true
+#           url: https://api.github.com/repos/sawtone/Sawtone.github.io
+#           # 可选：刷新间隔（ms）
+#           refreshInterval: 60000
 
-- Website:
-    - myWebsite:
-        icon: github
-        href: https://github.com/sawtone/myWebsite
-        widget:
-          type: gitrepo
-          style: card
-          compact: true
-          url: https://api.github.com/repos/sawtone/myWebsite
-          # 可选：刷新间隔（ms）
-          refreshInterval: 60000
+# - Website:
+#     - myWebsite:
+#         icon: github
+#         href: https://github.com/sawtone/myWebsite
+#         widget:
+#           type: gitrepo
+#           style: card
+#           compact: true
+#           url: https://api.github.com/repos/sawtone/myWebsite
+#           # 可选：刷新间隔（ms）
+#           refreshInterval: 60000
 
-- LLM:
-    - InternLM:
-        icon: github
-        href: https://github.com/sawtone/search_helper
-        widget:
-          type: gitrepo
-          style: card
-          compact: true
-          url: https://api.github.com/repos/sawtone/search_helper
-          # 可选：刷新间隔（ms）
-          refreshInterval: 60000
+# - LLM:
+#     - InternLM:
+#         icon: github
+#         href: https://github.com/sawtone/search_helper
+#         widget:
+#           type: gitrepo
+#           style: card
+#           compact: true
+#           url: https://api.github.com/repos/sawtone/search_helper
+#           # 可选：刷新间隔（ms）
+#           refreshInterval: 60000
 
-- LLM2:
-    - ChatStudio:
-        icon: github
-        href: https://github.com/sawtone/ChatStudio
-        widget:
-          type: gitrepo
-          style: card
-          compact: true
-          url: https://api.github.com/repos/sawtone/ChatStudio
-          # 可选：刷新间隔（ms）
-          refreshInterval: 60000
+# - LLM2:
+#     - ChatStudio:
+#         icon: github
+#         href: https://github.com/sawtone/ChatStudio
+#         widget:
+#           type: gitrepo
+#           style: card
+#           compact: true
+#           url: https://api.github.com/repos/sawtone/ChatStudio
+#           # 可选：刷新间隔（ms）
+#           refreshInterval: 60000
 
-- PFollow:
-    - TravelTracker:
-        icon: github
-        href: https://github.com/sawtone/travel-tracker-client
-        widget:
-          type: gitrepo
-          style: card
-          compact: true
-          url: https://api.github.com/repos/sawtone/travel-tracker-client
-          # 可选：刷新间隔（ms）
-          refreshInterval: 60000
+# - PFollow:
+#     - TravelTracker:
+#         icon: github
+#         href: https://github.com/sawtone/travel-tracker-client
+#         widget:
+#           type: gitrepo
+#           style: card
+#           compact: true
+#           url: https://api.github.com/repos/sawtone/travel-tracker-client
+#           # 可选：刷新间隔（ms）
+#           refreshInterval: 60000
 
-- Workspace:
-    - ST-Homepage:
-        icon: github
-        href: https://github.com/sawtone/ST-Homepage
+# - Workspace:
+#     - ST-Homepage:
+#         icon: github
+#         href: https://github.com/sawtone/ST-Homepage
+#         widget:
+#           type: gitrepo
+#           style: card
+#           compact: true
+#           url: https://api.github.com/repos/sawtone/ST-Homepage
+#           # 可选：刷新间隔（ms）
+#           refreshInterval: 60000
+
+# square 为大型正方形快捷方式；banner 为小型横向条形
+- Shortcuts:
+    - 常用链接:
         widget:
-          type: gitrepo
-          style: card
-          compact: true
-          url: https://api.github.com/repos/sawtone/ST-Homepage
-          # 可选：刷新间隔（ms）
-          refreshInterval: 60000
+          type: shortcut
+          shape: banner
+          columns: 6
+          gap: 4
+          iconSize: 32
+          items:
+            - name: GitHub
+              href: "https://github.com"
+              icon: mdi-github
+              description: "代码托管"
+            - name: Homepage Docs
+              href: "https://gethomepage.dev"
+              icon: sh-homepage
+              description: "文档"
+            - name: GitHub
+              href: "https://github.com"
+              icon: mdi-github
+              description: "代码托管"
+            - name: GitHub
+              href: "https://github.com"
+              icon: mdi-github
+              description: "代码托管"
+            - name: GitHub
+              href: "https://github.com"
+              icon: mdi-github
+              description: "代码托管"
+            - name: GitHub
+              href: "https://github.com"
+              icon: mdi-github
+              description: "代码托管"
+            - name: GitHub
+              href: "https://github.com"
+              icon: mdi-github
+              description: "代码托管"
