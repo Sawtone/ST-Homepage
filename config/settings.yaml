@@ -13,3 +13,7 @@ connectivity:
     - "sawtone.site"
     - "homepage.sawtone.site"
     - "/.*\\.vercel\\.app/"
+
+log:
+  level: "info"
+  driver: "console"
