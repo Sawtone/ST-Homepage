@@ -111,6 +111,7 @@ import romm from "./romm/widget";
 import rutorrent from "./rutorrent/widget";
 import sabnzbd from "./sabnzbd/widget";
 import scrutiny from "./scrutiny/widget";
+import shortcut from "./shortcut/widget";
 import slskd from "./slskd/widget";
 import sonarr from "./sonarr/widget";
 import speedtest from "./speedtest/widget";
@@ -123,7 +124,6 @@ import swagdashboard from "./swagdashboard/widget";
 import tailscale from "./tailscale/widget";
 import tandoor from "./tandoor/widget";
 import tautulli from "./tautulli/widget";
-import tdarr from "./tdarr/widget";
 import technitium from "./technitium/widget";
 import traefik from "./traefik/widget";
 import transmission from "./transmission/widget";
@@ -294,7 +294,7 @@ const widgets = {
   whatsupdocker,
   xteve,
   zabbix,
-  gitrepo,
+  shortcut,
 };
 
 export default widgets;

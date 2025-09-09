@@ -136,7 +136,6 @@ const components = {
   traefik: dynamic(() => import("./traefik/component")),
   transmission: dynamic(() => import("./transmission/component")),
   trilium: dynamic(() => import("./trilium/component")),
-  gitrepo: dynamic(() => import("./gitrepo/component")),
   tubearchivist: dynamic(() => import("./tubearchivist/component")),
   truenas: dynamic(() => import("./truenas/component")),
   unifi: dynamic(() => import("./unifi/component")),
@@ -152,6 +151,8 @@ const components = {
   whatsupdocker: dynamic(() => import("./whatsupdocker/component")),
   xteve: dynamic(() => import("./xteve/component")),
   zabbix: dynamic(() => import("./zabbix/component")),
+  gitrepo: dynamic(() => import("./gitrepo/component")),
+  shortcut: dynamic(() => import("./shortcut/component")),
 };
 
 export default components;
