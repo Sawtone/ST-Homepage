@@ -74,8 +74,132 @@
 #           # 可选：刷新间隔（ms）
 #           refreshInterval: 60000
 
-# square 为大型正方形快捷方式；banner 为小型横向条形
-- Shortcuts:
+# 标准化 GitRepo 组件示例
+# small medium large
+# default compact minimal
+- My Repositories:
+    - Sawtone's Blog:
+        icon: github
+        href: https://github.com/sawtone/Sawtone.github.io
+        widget:
+          type: gitrepo
+          standardized: true
+          size: medium
+          variant: default
+          url: https://api.github.com/repos/sawtone/Sawtone.github.io
+          refreshInterval: 60000
+
+    - myWebsite:
+        icon: github
+        href: https://github.com/sawtone/myWebsite
+        widget:
+          type: gitrepo
+          standardized: true
+          size: medium
+          variant: default
+          url: https://api.github.com/repos/sawtone/myWebsite
+          refreshInterval: 60000
+
+    - InternLM:
+        icon: github
+        href: https://github.com/sawtone/search_helper
+        widget:
+          type: gitrepo
+          standardized: true
+          size: medium
+          variant: default
+          url: https://api.github.com/repos/sawtone/search_helper
+          refreshInterval: 60000
+
+    - ChatStudio:
+        icon: github
+        href: https://github.com/sawtone/ChatStudio
+        widget:
+          type: gitrepo
+          standardized: true
+          size: medium
+          variant: default
+          url: https://api.github.com/repos/sawtone/ChatStudio
+          refreshInterval: 60000
+
+    - TravelTracker:
+        icon: github
+        href: https://github.com/sawtone/travel-tracker-client
+        widget:
+          type: gitrepo
+          standardized: true
+          size: medium
+          variant: default
+          url: https://api.github.com/repos/sawtone/travel-tracker-client
+          refreshInterval: 60000
+
+    - ST-Homepage:
+        icon: github
+        href: https://github.com/sawtone/ST-Homepage
+        widget:
+          type: gitrepo
+          standardized: true
+          size: medium
+          variant: default
+          url: https://api.github.com/repos/sawtone/ST-Homepage
+          refreshInterval: 60000
+
+# 标准化 Shortcut 组件示例
+- Quick Shortcuts:
+    - 开发工具:
+        widget:
+          type: shortcut
+          standardized: true
+          size: medium
+          variant: default
+          shape: banner
+          columns: 4
+          gap: 4
+          iconSize: 24
+          items:
+            - name: GitHub
+              href: "https://github.com"
+              icon: mdi-github
+              description: "全球最大的代码托管平台"
+            - name: GitLab
+              href: "https://gitlab.com"
+              icon: mdi-gitlab
+              description: "完整的DevOps平台"
+            - name: Stack Overflow
+              href: "https://stackoverflow.com"
+              icon: mdi-stack-overflow
+              description: "程序员问答社区"
+            - name: MDN
+              href: "https://developer.mozilla.org"
+              icon: mdi-language-javascript
+              description: "Web开发文档和教程"
+
+    - 设计资源:
+        widget:
+          type: shortcut
+          standardized: true
+          size: medium
+          variant: default
+          shape: square
+          columns: 3
+          gap: 4
+          iconSize: 28
+          items:
+            - name: Figma
+              href: "https://figma.com"
+              icon: mdi-figma
+              description: "协作设计工具"
+            - name: Dribbble
+              href: "https://dribbble.com"
+              icon: mdi-dribbble
+              description: "设计灵感社区"
+            - name: Unsplash
+              href: "https://unsplash.com"
+              icon: mdi-image
+              description: "免费高质量图片"
+
+# 原有组件仍然可以正常使用
+- Legacy Shortcuts:
     - 常用链接:
         widget:
           type: shortcut
@@ -92,22 +216,6 @@
               href: "https://gethomepage.dev"
               icon: sh-homepage
               description: "文档"
-            - name: GitHub
-              href: "https://github.com"
-              icon: mdi-github
-              description: "代码托管"
-            - name: GitHub
-              href: "https://github.com"
-              icon: mdi-github
-              description: "代码托管"
-            - name: GitHub
-              href: "https://github.com"
-              icon: mdi-github
-              description: "代码托管"
-            - name: GitHub
-              href: "https://github.com"
-              icon: mdi-github
-              description: "代码托管"
             - name: GitHub
               href: "https://github.com"
               icon: mdi-github

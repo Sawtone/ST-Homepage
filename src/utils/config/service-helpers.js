@@ -258,6 +258,10 @@ export function cleanServiceGroups(groups) {
           style,
           compact,
           headers,
+          standardized,
+          size,
+          variant,
+          url,
 
           // azuredevops
           repositoryId,
@@ -644,6 +648,11 @@ export function cleanServiceGroups(groups) {
         if (style !== undefined) widget.style = style;
         if (compact !== undefined) widget.compact = compact;
         if (headers !== undefined) widget.headers = headers;
+        // pass-through standardized ui options and generic url for proxy-based widgets
+        if (standardized !== undefined) widget.standardized = standardized;
+        if (size !== undefined) widget.size = size;
+        if (variant !== undefined) widget.variant = variant;
+        if (url) widget.url = url;
         return widget;
       });
       return cleanedService;

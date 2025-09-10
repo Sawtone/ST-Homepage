@@ -11,7 +11,7 @@ const widget = {
   mappings: {
     // 使用一个无害的查询参数以避免空 endpoint 被拒绝
     repo: { endpoint: "?t=1" },
-    commits: { endpoint: "/commits?per_page=2" },
+    commits: { endpoint: "/commits?per_page=1" },
   },
   headers: {
     Accept: "application/vnd.github+json",
