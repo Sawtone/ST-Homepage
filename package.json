@@ -23,7 +23,7 @@
     "ical.js": "^2.1.0",
     "js-yaml": "^4.1.0",
     "json-rpc-2.0": "^1.7.0",
-    "luxon": "^3.6.1",
+    "luxon": "^3.7.2",
     "memory-cache": "^0.2.0",
     "minecraftstatuspinger": "^1.2.2",
     "next": "^15.5.2",
